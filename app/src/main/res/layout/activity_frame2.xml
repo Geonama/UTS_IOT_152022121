@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Frame2Activity">
+
+    <!-- Logo kedua -->
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="374dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gambar Suhu -->
+    <ImageView
+        android:id="@+id/logoSuhu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logosuhu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo2" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="612dp"
+        android:backgroundTint="#f90606"
+        android:text="BACK"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSuhuData"
+        android:layout_width="223dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0cc0df"
+        android:text="Suhu: Loading..."
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoSuhu" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="163dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#0cc0df"
+        android:text="CLOSE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSuhuData" />
+
+    <Button
+        android:id="@+id/btnViewSuhu"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="#0cc0df"
+        android:text="VIEW SUHU"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
